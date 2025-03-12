@@ -13,9 +13,8 @@ switchport access vlan 10
 SW1 f0/2 ----- SW2 f0/2
 (deben haberse creado las mismas vlan en ambos switches)
 interface f0/2 switchport mode trunk
-switchport mode trunk vlan native 1(depende de cual es la vlan nativa)
-switchport mode trunk vlan 10,20,.....
-
+switchport trunk native vlan 1(depende de cual es la vlan nativa)
+switchport trunk allowed vlan 1,10,20,.....
 #nota:
 si se quiere dar acceso de una vlan a mas puertos:
 ejemplo vlan10 a fa0/10 a fa0/15
