@@ -1,0 +1,24 @@
+nota:show ip interface brief //ver los puertos,sus ip designadas,protocolos,estado
+
+1)agregamos una ip al servidor(ver imagen1)
+2)vamos a la pestaña service/DHCP
+-añadimos la direccion gateway de la red,en este caso es 192.168.10.1
+-ajustamos apartir de que rango queremos las ip(ver imagen2)
+-save
+-on
+-podemos abrir una computadora e ir a la pestaña desktop/ip configuration/dhcp(ver imagen3)
+nota:este servidor solo servira para las computadoras de la red ala que pertenece , es decir en el ejemplo para la red 192.168.10.0/24
+debido a su configuracion en el gateway
+para solucionar ese problema , agregamos otro service pool
+repetimos los pasos anteriores pero usamos datos convenientes para llenar los cuadros usando la red 192.168.20.0/24
+que es la otra red en nuestro ejemplo
+
+-ahora debemos hacer que el segundo router se conecte con el servidor dhcp
+nos vamos a ese router en el caso del laboratorio este esta conectado al SW en el puerto f0/0
+en la CLI:
+
+interface f0/0
+ip helper-address 192.168.10.2 //el cual esta ultima direccion es la direccion ip que le dimos al servidor DCHP
+
+solo basta configurar las direcciones ip de las computadoras de la segunda red, de igual forma se explico en pasos anteriores
+

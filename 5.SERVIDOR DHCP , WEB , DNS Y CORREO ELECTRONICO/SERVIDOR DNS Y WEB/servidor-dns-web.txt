@@ -1,0 +1,20 @@
+-------------Previamente configurado el servidor DHCP----------------
+CONFIGURAR SERVIDOR DNS
+
+1)configuramos la ip del servidor DNS
+2)apagamos todos los servidores genericos desde service
+menos el DNS
+3)en DNS escojemos una direccion de prueba
+www.cisco.com
+y asignamos una direccion
+192.168.10.5
+add
+de igual forma lo hacemos para todas las direcciones que queremos agregar
+
+CONFIGURAR SERVIDOR WEB
+1)configuramos la ip del servidor WEB
+el cual es la anterior 192.168.10.5 para este ejemplo
+y agregamos en DNS server la direccion del servidor DNS en este caso es 192.168.10.3
+2)en el servidor WEB apagamos todos los servidores genericos desde service menos HTTP
+3)vemos que se visualiza el codigo html por defecto en HTTP
+4)vamos a cualquier navegador web de cualquier computador de la red y escribimos la url: www.cisco.com y se ve la pagina por defecto que trae cisco
