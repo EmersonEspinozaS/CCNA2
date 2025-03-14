@@ -1,0 +1,11 @@
+1)hacemos la configuracion ip
+para el ejemplo: 192.168.10.6/24
+2)apagamos todos los otros servicios menos el CORREO
+3)elegimos un nombre de dominio
+por ejemplo:uni.pe y empezamos a crear los usuarios junto con los password(ver imagen1) y le damos a +
+nota: los correos que se crean son de la forma:
+user@uni.pe
+4)vamos a los equipos(laptop) /desktop/e mail
+y configuramos(ver imagen2), lo mismo con todos los equipos
+5)prueba de envio de correo(ver imagen3)
+6)nos vamos a la pc donde se envio el correo(ver imagen4)
