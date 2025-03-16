@@ -1,4 +1,4 @@
------CONFIGURACION BASICA DE LA CLI---------
+-----CONFIGURACION BASICA DE LA CLI------
 
 router , switch capa 3
 
