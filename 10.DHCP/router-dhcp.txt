@@ -14,4 +14,8 @@ exit
 
 do wr //guardamos
 
+-------------DHCP para vlans----------------------
+1)creamos los pool en el servidor dhcp
+2)al hacer el enrutamiento entre vlans agregamos la linea por cada vlan creada:
+ip helper-adress 192.168.40.1 //direccion ip del servidor dhcp
 
